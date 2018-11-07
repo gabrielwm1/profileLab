@@ -9,7 +9,8 @@ angular
             template: "<main></main>"
           })
           // when the user navigates to the comp-one route(see index.html), load the compOne component in ngView
-          .when("/comp-two", {
-            template: "<comp-two></comp-two>"
+          .when("/profile-edit", {
+            template: "<profile-edit></profile-edit>"
           });
+          
       }])

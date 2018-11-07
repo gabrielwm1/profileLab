@@ -12,11 +12,11 @@ function profileService($location) {
     }
     self.setUserProfile = (person) => {
         self.info = person;
-        //$location.path("/main/main")
-        console.log(self.info);
     }
 
 }
 angular
     .module("App")
     .service("profileService", profileService);
+
+    

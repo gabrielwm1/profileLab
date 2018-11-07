@@ -6,7 +6,9 @@ const profileEdit = {
     controller: ["profileService", function(profileService){
         const vm = this;
         // vm.passInfo = (person) => {
-        // vm.info = person;
+        
+        profileService.getUserProfile();
+
         vm.passData = (person) => {
             profileService.setUserProfile(person);
             console.log("test");

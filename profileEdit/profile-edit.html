@@ -1,12 +1,12 @@
 <!-- <section ng-controller="profileService as $ctrl"> -->
-    <form>
+    <form ng-submit="$ctrl.passData($ctrl.person)">
         <p>Use the Form below to update your info</p>
         <label>Name<label>
         <input type= "text" ng-model="$ctrl.person.name">
         <label>Contact<label>
-        <input type= "text" ng-model="$ctrl.person.email">
+        <input type= "text" ng-model="$ctrl.person.contact">
         <label>Bio</label>
         <textarea type="text" ng-model= "$ctrl.person.bio"></textarea>
-        <button ng-click="$ctrl.passData($ctrl.person)">Update</button>
+        <button>Update</button>
     </form>
 <!-- </section> -->
