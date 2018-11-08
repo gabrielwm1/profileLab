@@ -6,12 +6,16 @@ const main = {
              <section class = "image-container"></section>
 
               <section>
-                <img src = "">
-                <p>{{ $ctrl.info.name }}</p>
-                <p>{{ $ctrl.info.contact }}</p>
-                <p>{{ $ctrl.info.bio }}</p>
-      
-              <button>edit</button>
+                <section class="image-container">
+                  <img src = "grant.png">
+                </section>
+                <section class="display-info">
+                  <p class="name">{{ $ctrl.info.name }}</p>
+                  <p class="contact">{{ $ctrl.info.contact }}</p>
+                  <p class="bio">{{ $ctrl.info.bio }}</p>
+                  <button class="edit-button">Edit</button>
+                </section>
+             
               </section>
 
     </section>
