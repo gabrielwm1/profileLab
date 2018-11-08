@@ -7,10 +7,10 @@ const profileEdit = {
         const vm = this;
         // vm.passInfo = (person) => {
         
-        profileService.getUserProfile();
+        vm.person = angular.copy(profileService.getUserProfile());
 
-        vm.passData = (person) => {
-            profileService.setUserProfile(person);
+        vm.passData = (updatedPerson) => {
+            profileService.setUserProfile(updatedPerson);
             console.log("test");
         };
       
