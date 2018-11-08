@@ -13,6 +13,11 @@ function profileService($location) {
     self.setUserProfile = (person) => {
         self.info = person;
     }
+    //redirects user to edit page
+
+    self.loadEditSection = () => {
+        $location.path("/profile-edit");
+    }
 
 }
 angular

@@ -13,7 +13,7 @@ const main = {
                   <p class="name">{{ $ctrl.info.name }}</p>
                   <p class="contact">{{ $ctrl.info.contact }}</p>
                   <p class="bio">{{ $ctrl.info.bio }}</p>
-                  <button class="edit-button">Edit</button>
+                  <button class="edit-button" ng-click= "$ctrl.loadEditSection()">Edit</button>
                 </section>
              
               </section>
@@ -26,7 +26,11 @@ const main = {
     // Creating a property of the controller called info, which is initialized to the object returned from the getData method
     vm.info = profileService.getUserProfile();
 
+    vm.loadEditSection = () => {
+      profileService.loadEditSection();
+    }
   }]
+    
 
 }
 
